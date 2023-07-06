@@ -25,13 +25,18 @@
 }
 
 .kanji-effect {
-  color: #E1E1E1;
+  background: #e1e1e1;
+  color: transparent;
   font-weight: 700;
-  font-size: 130px;
-  position: absolute;
+  font-size: 120px;
+  position: fixed;
   top: 0;
-  right: 800px;
+  left: 450px;
   z-index: -1;
+  line-height: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .image-content {
