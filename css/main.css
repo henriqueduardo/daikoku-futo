@@ -24,6 +24,12 @@
   top: 80px;
 }
 
+.upper-paragraph {
+  font-size: 32px;
+  font-weight: 700;
+  margin-right: 2px;
+}
+
 .kanji-effect {
   background: #e1e1e1;
   color: transparent;
@@ -31,7 +37,7 @@
   font-size: 120px;
   position: fixed;
   top: 0;
-  left: 450px;
+  left: 360px;
   z-index: -1;
   line-height: 1;
   background-clip: text;
