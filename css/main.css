@@ -1,0 +1,44 @@
+.main-content {
+  display: flex;
+  align-items: center;
+  height: 95vh;
+}
+
+.text-content {
+  width: 50%;
+  color: #212121;
+  position: relative;
+}
+
+.text-content h1 {
+  font-size: 82px;
+}
+
+.info-link {
+  color: #212121;
+}
+
+.paragraph {
+  font-size: 14px;
+  position: relative;
+  top: 80px;
+}
+
+.kanji-effect {
+  color: #E1E1E1;
+  font-weight: 700;
+  font-size: 130px;
+  position: absolute;
+  top: 0;
+  right: 800px;
+  z-index: -1;
+}
+
+.image-content {
+  background: url(http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2023/04/15154218/UD-23-Sunday-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 95vh;
+  width: 50%;
+}
