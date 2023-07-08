@@ -13,3 +13,9 @@
   text-decoration: none;
   color: #212121;
 }
+
+@media (max-width: 1100px) {
+  .header-bg {
+    position: relative;
+  }
+}
