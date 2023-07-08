@@ -1,0 +1,56 @@
+.ux-bg {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.ux-text-content h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 99;
+}
+
+.ux-text-content h2::before {
+  content: '';
+  position: absolute;
+  top: 80px;
+  z-index: -1;
+  width: 140px;
+  height: 5px;
+  background: #e1e1e1;
+}
+
+.ux-text-content p {
+  width: 700px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #252525;
+}
+
+.btn-content-box {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-highlight {
+  outline: none;
+  border: 1px solid #0240a1;
+  padding: 10px 20px;
+  color: #fff;
+  background: #0240a1;
+  cursor: pointer;
+}
+
+.btn-normal {
+  outline: none;
+  border: 1px solid #252525;
+  padding: 10px 20px;
+  color: #252525;
+  background: #fff;
+  cursor: pointer;
+}
