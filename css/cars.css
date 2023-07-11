@@ -36,7 +36,7 @@
 }
 
 .cars-text h2::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 35px;
   z-index: -1;
@@ -73,16 +73,69 @@
   cursor: pointer;
 }
 
-.cars-text-image.active-modal {
+.modal-content {
+  background-color: #f0f0f0;
+  padding: 40px 40px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out,
+    transform 0.25s ease-in-out;
+}
+
+.close-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  right: 40px;
+  padding: 10px 0px;
+  background-color: lightgray;
   position: absolute;
-  width: 45%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.close-button .bi-x-lg {
+  color: #252525;
+  font-size: 12px;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.cars-text-image.modal-image-content {
+  width: 600px;
+  margin-top: 0px;
+  cursor: default;
 }
 
 @media (max-width: 1100px) {
-  .cars-text-content-box, .cars-text-content-box-reverse {
+  .cars-text-content-box,
+  .cars-text-content-box-reverse {
     flex-direction: column-reverse;
   }
   .cars-image {
@@ -93,11 +146,26 @@
   }
 }
 
+@media (max-width: 725px) {
+  .cars-text-image.modal-image-content {
+    width: 450px;
+  }
+}
+
 @media (max-width: 550px) {
   .cars-text {
     padding: 20px 20px;
   }
   .cars-image {
     height: auto;
+  }
+  .modal-content {
+    padding: 20px;
+  }
+  .close-button {
+    right: 20px;
+  }
+  .cars-text-image.modal-image-content {
+    width: 300px;
   }
 }

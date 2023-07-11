@@ -19,13 +19,12 @@
 }
 
 .ux-text-content h2::before {
-  content: "";
   position: absolute;
-  top: 80px;
   z-index: -1;
-  width: 140px;
-  height: 5px;
-  background: #626464;
+  content: "行";
+  color: #e1e1e1;
+  font-weight: 700;
+  left: 280px;
 }
 
 .ux-text-content p {
@@ -110,7 +109,8 @@
   padding: 8px 16px;
   text-decoration: none;
   background: linear-gradient(#f0f0f0, #f9f9f9);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   text-transform: uppercase;
   max-width: max-content;
   color: #0f0f0f;
