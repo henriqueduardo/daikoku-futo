@@ -15,7 +15,7 @@
   margin-bottom: 10px;
   position: relative;
   z-index: 99;
-  color: #0f0f0f;
+  color: #160e20;
 }
 
 .ux-text-content h2::before {
@@ -30,22 +30,18 @@
 .ux-text-content p {
   font-size: 18px;
   font-weight: 400;
-  color: #0f0f0f;
+  color: #160e20;
 }
 
 .catalog-content-box {
   display: flex;
   align-items: center;
   padding: 40px 60px;
+  position: relative;
 }
 
 .catalog-gradient {
-  color: #fff;
-  background: #252525;
-}
-
-.catalog-gradient p {
-  color: #e1e1e1;
+  background: #ddd1eb;
 }
 
 .cars-catalog-image {
@@ -53,17 +49,17 @@
   height: 400px;
   object-fit: cover;
   position: relative;
-  z-index: 2;
 }
 
-.cars-catalog-image::before {
-  content: "novo";
+.new-alert-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  background: #626464;
-  z-index: 106;
+  z-index: 5;
+  top: 60px;
+  padding: 5px 20px;
+  background: #7c4db3;
+  color: #ddd1eb;
+  border-radius: 0px 6px 6px 0px;
+  text-transform: uppercase;
 }
 
 .text-catalog-text {
@@ -81,11 +77,12 @@
 .text-catalog-text h3::before {
   content: "";
   position: absolute;
-  top: 35px;
+  top: 25px;
+  left: 225px;
   z-index: 2;
-  width: 40px;
+  width: 5px;
   height: 5px;
-  background: #dbdbdc;
+  background: #7045a1;
 }
 
 .text-catalog-text p {
@@ -101,7 +98,7 @@
 
 .bi {
   font-size: 26px;
-  color: #0240a1;
+  color: #7045a1;
   margin-bottom: 10px;
 }
 
@@ -113,7 +110,7 @@
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   text-transform: uppercase;
   max-width: max-content;
-  color: #0f0f0f;
+  color: #160e20;
   font-size: 13px;
   border: none;
   cursor: pointer;
@@ -132,7 +129,7 @@
     padding: 20px 20px;
   }
   .catalog-gradient {
-    background: #252525;
+    background: #ddd1eb;
   }
   .ux-text-content p {
     width: 100%;

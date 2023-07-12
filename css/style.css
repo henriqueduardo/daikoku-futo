@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap");
 
 @import url(header.css);
 @import url(main.css);
 @import url(cars.css);
-@import url(ux.css);
+@import url(catalog-home.css);
 @import url(catalog-cars-details.css);
 
 * {
@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  background: #efeaf6;
 }
 
 .container {

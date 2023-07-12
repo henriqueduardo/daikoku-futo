@@ -69,3 +69,14 @@
   width: 250px;
   cursor: pointer;
 }
+
+.js-image-full-content {
+  object-fit: cover;
+  min-width: 660px;
+  max-height: 506px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.js-image-full-content.hide-image {
+  opacity: 0;
+}
