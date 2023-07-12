@@ -62,6 +62,34 @@
   margin: 20px 0px;
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image {
+  width: 100%
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay .bi {
+  color: #fff;
+}
+
 .cars-text-image-box {
   display: flex;
   justify-content: space-between;
@@ -70,7 +98,12 @@
 .cars-text-image {
   margin-top: 20px;
   width: 270px;
+  min-height: 180px;
   cursor: pointer;
+}
+
+.cars-text-image:hover {
+  filter: brightness(0.5);
 }
 
 .modal-content {
@@ -131,6 +164,7 @@
   width: 600px;
   margin-top: 0px;
   cursor: default;
+  filter: none;
 }
 
 @media (max-width: 1100px) {
@@ -142,7 +176,7 @@
     width: 100%;
   }
   .cars-text-image {
-    width: 49%;
+    width: 97%;
   }
 }
 

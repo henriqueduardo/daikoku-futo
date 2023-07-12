@@ -16,6 +16,16 @@ function initModal() {
       modal.classList.remove("show-modal");
     }
 
+    // fechar modal no esc
+    function closeModalOnEsc(event) {
+      if (event.key === "Escape") {
+        const openModal = document.querySelector(".show-modal");
+        if (openModal) {
+          openModal.classList.remove("show-modal");
+        }
+      }
+    }
+
     // percorrer cada imagem
     images.forEach((image) => {
       image.addEventListener("click", showModal);
@@ -24,6 +34,8 @@ function initModal() {
     btnCloseModal.forEach((button) => {
       button.addEventListener("click", closeModal);
     });
+
+    document.addEventListener("keydown", closeModalOnEsc);
   }
 }
 
@@ -38,7 +50,7 @@ function initChangeImage() {
       // transição
       imageFull.classList.add("hide-image");
       // atualizar e exibir imagem
-      setTimeout(function() {
+      setTimeout(function () {
         imageFull.src = clickedImage.src;
         // esconder imagem
         imageFull.classList.remove("hide-image");
