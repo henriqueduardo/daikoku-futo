@@ -3,6 +3,7 @@
 @import url(header.css);
 @import url(main.css);
 @import url(cars.css);
+@import url(services.css);
 @import url(catalog-home.css);
 @import url(catalog-cars-details.css);
 @import url(footer.css);
@@ -27,7 +28,6 @@ body {
 
 .container {
   padding: 20px 60px;
-  max-width: 1400px;
   margin: 0 auto;
 }
 
