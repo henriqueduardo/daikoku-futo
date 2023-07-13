@@ -5,7 +5,7 @@ function initModal() {
   if (images && btnCloseModal.length) {
     // abrir modal de acordo com o id
     function showModal(event) {
-      const modalId = event.target.dataset.modal; // data
+      const modalId = event.target.dataset.modal; // data-atributes
       const modal = document.getElementById(modalId); // #id
       modal.classList.add("show-modal"); // id selecionado
     }
@@ -63,5 +63,21 @@ function initChangeImage() {
   }
 }
 
+function initAccordion() {
+  const accordion = document.querySelectorAll("[data-faq='faq'] dt");
+
+  if (accordion.length) {
+    function activeAccordion() {
+      this.classList.toggle("active");
+      this.nextElementSibling.classList.toggle("active");
+    }
+
+    accordion.forEach((i) => {
+      i.addEventListener("click", activeAccordion);
+    });
+  }
+}
+
 initModal();
 initChangeImage();
+initAccordion();

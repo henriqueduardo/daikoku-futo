@@ -30,7 +30,21 @@
 .ux-text-content p {
   font-size: 18px;
   font-weight: 400;
+  color: #252525;
+}
+.btn-all-cars {
+  padding: 8px 16px;
+  text-decoration: none;
+  background: linear-gradient(#f0f0f0, #f9f9f9);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  text-transform: uppercase;
+  max-width: max-content;
   color: #160e20;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
 }
 
 .catalog-content-box {

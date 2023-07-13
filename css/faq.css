@@ -1,0 +1,114 @@
+.faq-bg {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-text-content {
+  width: 40%;
+  border-right: 1px solid #ddd1eb;
+  padding-right: 30px;
+}
+
+.faq-text-content span {
+  color: #252525;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.faq-text-content h2 {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #252525;
+}
+
+.faq-text-content p {
+  color: #252525;
+}
+
+.faq-content-box {
+  width: 60%;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+dt {
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+dt::after {
+  content: "⌄";
+  margin-left: 60px;
+  font-weight: 700;
+  float: right;
+}
+
+[data-faq="faq"] dd {
+  display: none;
+}
+
+[data-faq="faq"] dt.active::after {
+  content: "⌃";
+}
+
+[data-faq="faq"] dt.active {
+  color: #7c4db3;
+  font-weight: 700;
+  padding-bottom: 0px;
+  border: none;
+}
+
+[data-faq="faq"] dd.active {
+  display: block;
+  font-size: 13px;
+  color: #252525;
+  font-weight: 400;
+  margin: 0px 30px;
+  border-bottom: 1px solid #ddd1eb;
+  padding-bottom: 10px;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .faq-bg {
+    flex-direction: column;
+  }
+  .faq-text-content {
+    width: 100%;
+    padding-right: 0px;
+    border: none;
+  }
+  .faq-content-box {
+    width: 100%;
+  }
+  dt {
+    padding: 10px 0px;
+  }
+  [data-faq="faq"] dd.active {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  .faq-text-content p {
+    margin-bottom: 40px;
+  }
+}

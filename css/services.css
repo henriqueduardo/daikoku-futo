@@ -93,3 +93,11 @@
     width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  .services-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
