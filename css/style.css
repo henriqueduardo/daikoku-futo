@@ -5,6 +5,7 @@
 @import url(cars.css);
 @import url(catalog-home.css);
 @import url(catalog-cars-details.css);
+@import url(footer.css);
 
 * {
   margin: 0;
@@ -16,15 +17,18 @@ html {
   min-width: 320px;
   max-width: 1500px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background: #efeaf6;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   padding: 20px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 @media (max-width: 550px) {
