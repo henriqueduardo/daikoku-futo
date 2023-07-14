@@ -26,6 +26,13 @@ function initModal() {
       }
     }
 
+    // fechar modal no clique
+    function closeModalOutside(event) {
+      if (event.target.classList.contains("modal")) {
+        event.target.classList.remove("show-modal");
+      }
+    }
+
     // percorrer cada imagem
     images.forEach((image) => {
       image.addEventListener("click", showModal);
@@ -36,6 +43,7 @@ function initModal() {
     });
 
     document.addEventListener("keydown", closeModalOnEsc);
+    document.addEventListener("click", closeModalOutside);
   }
 }
 
