@@ -1,43 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <title>Mazda RX-7 - Especificações</title>
-</head>
-<body>
-  <header class="container header-bg-relative">
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="index.html">hanga</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-content-details">
-    <h2>Mazda RX-7</h2>
-    <div class="desc-content-box">
-      <i class="bi bi-eye"><span>136 visualizações - Japão, 1993</span></i>
-      <i class="bi bi-share">compartilhar</i>
-    </div>
-    <div class="gallery-details">
-      <figure class="image-full">
-        <div class="image-full-text-content">
-          <h3>texto</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed vitae optio dicta, similique officiis.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Mazda RX-7 - Especificações</title>
+  </head>
+  <body>
+    <header class="container header-bg-relative">
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">hanga</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content-details">
+      <h2>Mazda RX-7</h2>
+      <div class="gallery-details">
+        <figure class="image-full">
+          <div class="image-full-text-content">
+            <h3>texto</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              sed vitae optio dicta, similique officiis.
+            </p>
+          </div>
+          <figure class="image-full-box">
+            <img
+              src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-Custom-RE-Amemiya-N1-05-Front-Bumper.jpg?fit=around%7C875:492"
+              alt="image"
+              class="js-image-full-content"
+            />
+            <figure class="images-thumbs-scroll js-image-scroll-content">
+              <img
+                src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-TCP-Magic-G-Face-GT-Front-Fenders-04.jpg?fit=around%7C875:492"
+                alt="image"
+                class="js-scroll-images"
+              />
+              <img
+                src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-Scoot-Sports-Hood-01.jpg?fit=around%7C875:492"
+                alt="image"
+                class="js-scroll-images"
+              />
+              <img
+                src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-TCP-Magic-G-Face-GT-Front-Fenders-01.jpg?fit=around%7C875:492"
+                alt="image"
+                class="js-scroll-images"
+              />
+              <img
+                src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-TCP-Magic-G-Face-GT-Front-Fenders-02.jpg?fit=around%7C875:492"
+                alt="image"
+                class="js-scroll-images"
+              />
+            </figure>
+          </figure>
+        </figure>
+      </div>
+      <div class="desc-content-box">
+        <div>
+          <i class="bi bi-eye"></i>
+          <span>136 Visualizações</span>
         </div>
-        <img src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-Custom-RE-Amemiya-N1-05-Front-Bumper.jpg?fit=around%7C875:492" alt="image" class="js-image-full-content">
-      </figure>
-    </div>
-    <figure class="images-thumbs-scroll js-image-scroll-content">
-      <img src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-TCP-Magic-G-Face-GT-Front-Fenders-04.jpg?fit=around%7C875:492" alt="image" class="js-scroll-images">
-      <img src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-Scoot-Sports-Hood-01.jpg?fit=around%7C875:492" alt="image" class="js-scroll-images">
-      <img src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-TCP-Magic-G-Face-GT-Front-Fenders-01.jpg?fit=around%7C875:492" alt="image" class="js-scroll-images">
-      <img src="https://www.motortrend.com/uploads/sites/25/2019/12/1993-Mazda-RX-7-TCP-Magic-G-Face-GT-Front-Fenders-02.jpg?fit=around%7C875:492" alt="image" class="js-scroll-images">
-    </figure>
-  </main>
-  <script src="js/app.js"></script>
-</body>
+        <nav>
+          <button class="btn-share" data-share="share"><i class="bi bi-share"></i></button>
+          <div class="copy-text" data-copy="copy-input">
+            <input
+              type="text"
+              class="text"
+              value="https://hanga-drift.vercel.app/"
+              data-text="text"
+            />
+            <button data-clipboard="copy">
+              <i class="bi bi-clipboard"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="footer-bg" data-anime="scroll">
+      <div class="footer-content-box container">
+        <a href="#" class="logo-footer">hanga</a>
+        <div>
+          <h4>contato</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.frontendmentor.io/profile/duu19"
+                target="_blank"
+                >@duardohenrique</a
+              >
+            </li>
+            <li>
+              <a href="mailto:duardohenriqe19@gmail.com"
+                >duardohenriqe19@gmail.com</a
+              >
+            </li>
+            <li><a href="tel:+55 (14) 9999-9999">+55 (14) 9999-9999</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>serviços</h4>
+          <ul>
+            <li><a href="#">Manutenção</a></li>
+            <li><a href="#">Personalização</a></li>
+            <li><a href="#">Restauração</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>outros</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Termos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy-content-box container">
+        <p class="copy">
+          ©️ Desenvolvido por
+          <a href="https://github.com/henriqueduardo" target="_blank"
+            >Eduardo Henrique</a
+          >. Alguns direitos reservados.
+        </p>
+        <div class="copy-icons-content-box">
+          <a href="https://github.com/henriqueduardo" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/henriquedu/" target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
 </html>
