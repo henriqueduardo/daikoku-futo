@@ -132,8 +132,75 @@ function initClipboard() {
   }
 }
 
+function initDropdownMenu() {
+  const dropdownMenu = document.querySelectorAll('[data-dropdown]');
+  dropdownMenu.forEach(menu => {
+    ['touchstart', 'click'].forEach(userEvent => { // array de eventos recebendo
+      menu.addEventListener(userEvent, handleClick);
+    });
+  });
+
+  function handleClick(event) {
+    event.preventDefault();
+    this.classList.add('active');
+    outsideClick(this, ['touchstart', 'click'], () => {
+      this.classList.remove("active");
+    });
+  };
+}
+
+function outsideClick(element, events, callback) {
+  const html = document.documentElement;
+  const outside = "data-outside";
+
+  if (!element.hasAttribute(outside)) {
+    events.forEach((userEvent) => {
+      html.addEventListener(userEvent, handleOutsideClick);
+    })
+    element.setAttribute(outside, "");
+  }
+  function handleOutsideClick(event) {
+    if (!element.contains(event.target)) {
+      element.removeAttribute(outside, "");
+      events.forEach((userEvent) => {
+        html.removeEventListener(userEvent, handleOutsideClick);
+      })
+      callback();
+    }
+  }
+}
+
+function initTooltip() {
+  const tooltipInfo = document.querySelector("[data-tooltip='info']");
+  const tooltipMap = document.querySelector("[data-tooltip='map']");
+
+  if(tooltipInfo && tooltipMap) {
+    function onMouseOver() {
+      tooltipMap.classList.add("active");
+      this.addEventListener('mousemove', onMouseMove.bind(tooltipMap));
+    }
+    
+    function onMouseOut() {
+      tooltipMap.classList.remove("active");
+    }
+    
+    function onMouseMove(event) {
+      const xOffset = 200; // posição em relação ao mouse
+      const yOffset = 30;
+    
+      this.style.top = event.pageY - xOffset + 'px';
+      this.style.left = event.pageX + yOffset + 'px';
+    }
+    
+    tooltipInfo.addEventListener("mouseover", onMouseOver);
+    tooltipInfo.addEventListener("mouseout", onMouseOut);
+  }
+}
+
 initModal();
 initChangeImage();
 initAccordion();
 initAnimationScroll();
 initClipboard();
+initDropdownMenu();
+initTooltip();

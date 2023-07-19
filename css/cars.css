@@ -29,20 +29,11 @@
 
 .cars-text {
   padding: 20px 60px;
+  width: 50%;
 }
 
 .cars-text h2 {
   position: relative;
-}
-
-.cars-text h2::before {
-  content: "";
-  position: absolute;
-  top: 35px;
-  z-index: -1;
-  width: 60px;
-  height: 5px;
-  background: #626464;
 }
 
 .cars-text p {
@@ -172,7 +163,7 @@
   .cars-text-content-box-reverse {
     flex-direction: column-reverse;
   }
-  .cars-image {
+  .cars-image,.cars-text {
     width: 100%;
   }
   .cars-text-image {

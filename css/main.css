@@ -14,7 +14,7 @@
   font-size: 82px;
 }
 
-.kanji-1, .kanji-2, .kanji-3 {
+.kanji-1, .kanji-2 {
   position: relative;
 }
 
@@ -36,34 +36,63 @@
   left: 255px;
 }
 
-.kanji-3::before {
-  position: absolute;
-  z-index: -1;
-  content: "行";
-  color: #e1e1e1;
-  font-weight: 700;
-  left: 365px;
-}
-
 .info-link {
   color: #212121;
+  margin-top: 20px;
 }
 
-.paragraph {
-  font-size: 14px;
+[data-tooltip="info"] {
   position: relative;
-  top: 40px;
+  background: #252525;
+  color: #FFF;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+[data-tooltip="info"]:hover {
+  transition: 0.3s;
+  background: #7c4db3;
+}
+
+[data-tooltip="map"] {
+  display: none;
+  width: 400px;
+  height: 260px;
+  right: 0;
+  border: 5px solid #252525;
+  position: absolute;
+  z-index: 999;
+  border-radius: 6px;
+  #map {
+    width: 100%;
+    height: 250px;
+    outline: none;
+    border: none;
+  }
+}
+
+[data-tooltip="map"].active {
+  display: block;
+}
+
+
+.paragraph {
+  margin-top: 20px;
+  font-size: 18px;
+  position: relative;
   color: #252525;
 }
 
-.upper-paragraph {
-  font-size: 32px;
+.strong-paragraph {
   font-weight: 700;
+  font-size: 26px;
   margin-right: 2px;
+  text-transform: uppercase;
 }
 
 .image-content {
-  background: url(../img/background.jpg);
+  background: url(../img/background-toru-resize.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
