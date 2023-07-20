@@ -1,0 +1,103 @@
+.jdm-bg {
+  width: 100%;
+  height: auto;
+}
+
+.jdm-title {
+  font-size: 40px;
+  color: #212121;
+}
+
+.jdm-paragraph {
+  width: 100%;
+  color: #252525;
+}
+
+.jdm-content-box {
+  display: flex;
+}
+
+.jdm-content-box .bi {
+  position: absolute;
+  background: #7c4db3;
+  padding: 5px 10px;
+  border-radius: 2rem;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.jdm-background-image-1 {
+  width: 500px;
+  height: 400px;
+  background: url(../img/jdm-1.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+}
+
+.jdm-background-image-2 {
+  width: 500px;
+  height: 400px;
+  background: url(../img/jdm-2.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+}
+
+.jdm-background-image-3 {
+  width: 500px;
+  height: 400px;
+  background: url(../img/jdm-3.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+}
+
+.jdm-background-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  padding: 20px 20px;
+}
+
+.jdm-background-text h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.jdm-background-text p {
+  color: #dfe6e9;
+}
+
+@media (max-width: 800px) {
+  .jdm-content-box {
+    flex-direction: column;
+  }
+  .jdm-paragraph, .jdm-background-image-1, .jdm-background-image-2, .jdm-background-image-3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .jdm-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}

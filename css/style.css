@@ -2,12 +2,12 @@
 
 @import url(header.css);
 @import url(main.css);
-@import url(cars.css);
-@import url(services.css);
+@import url(about.css);
+@import url(jdm.css);
+@import url(highlights.css);
 @import url(faq.css);
-@import url(catalog-home.css);
-@import url(catalog-cars-details.css);
 @import url(footer.css);
+@import url(catalog-cars-details.css);
 
 * {
   margin: 0;
