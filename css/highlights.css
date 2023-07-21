@@ -54,3 +54,18 @@
   color: #252525;
   margin-bottom: 20px;
 }
+
+@media (max-width: 1100px) {
+  .highlights-content-box, .highlights-content-box-reverse {
+    flex-direction: column;
+  }
+  .highlights-bg figure, .highlight-text  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .highlight-title, .highlight-paragraph, .highlight-text {
+    padding: 20px 20px;
+  }
+}
